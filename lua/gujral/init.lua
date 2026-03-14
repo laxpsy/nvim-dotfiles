@@ -1,0 +1,5 @@
+require("gujral.core.remap")
+require("gujral.core.options")
+require("gujral.core.lsp")
+require("gujral.plugin")
+require("gujral.theme")
