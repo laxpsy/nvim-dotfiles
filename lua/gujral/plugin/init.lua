@@ -104,9 +104,13 @@ return require('packer').startup(function(use)
 	}
 
 	use {
-		"stevearc/conform.nvim",
+		'stevearc/conform.nvim',
 		config = function()
 			require('gujral.plugin.conform')
 		end
+	}
+
+	use {
+		'cohama/lexima.vim'
 	}
 end)
