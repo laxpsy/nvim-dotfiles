@@ -7,7 +7,7 @@ opt.fillchars = {
 -- line numbers
 opt.number = true
 opt.relativenumber = true
-opt.signcolumn = "auto"
+opt.signcolumn = "yes:1"
 -- soft wrap text
 opt.wrap = true
 opt.linebreak = true
