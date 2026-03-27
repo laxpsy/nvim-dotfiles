@@ -18,6 +18,9 @@ end)
 vim.keymap.set('n', '<leader>wb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<A-m>', builtin.man_pages, { desc = 'Search man pages' })
 vim.keymap.set('n', '<leader>pd', builtin.diagnostics, { desc = 'Telescope diagnostics' })
+vim.keymap.set('n', '<leader>pt', function()
+	builtin.grep_string({ search = "TODO|FIXME|FIX|BUG|HACK|NOTE", use_regex = true, word_match = "-w" })
+end, { desc = 'Telescope todo/warning/fix stuff' })
 -- wiki find_files keymap
 vim.keymap.set('n', '<leader>ws', function()
 	builtin.find_files({
