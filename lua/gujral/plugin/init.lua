@@ -96,12 +96,12 @@ return require('packer').startup(function(use)
 		'lewis6991/gitsigns.nvim',
 	}
 
-	use {
-		'romgrk/barbar.nvim',
-		config = function()
-			require('gujral.plugin.barbar')
-		end
-	}
+	-- use {
+	-- 	'romgrk/barbar.nvim',
+	-- 	config = function()
+	-- 		require('gujral.plugin.barbar')
+	-- 	end
+	-- }
 
 	use {
 		'stevearc/conform.nvim',
@@ -112,5 +112,14 @@ return require('packer').startup(function(use)
 
 	use {
 		'cohama/lexima.vim'
+	}
+
+	use {
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+		config = function()
+			require('gujral.plugin.harpoon')
+		end
 	}
 end)
